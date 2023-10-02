@@ -1,0 +1,51 @@
+
+*{
+    box-sizing: border-box;
+}
+
+html,body,h1{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    /* display: flex;
+    flex-direction: column; */
+}
+header{
+    /* transforma al elemento en un contenedor */
+    display: flex;
+
+    /* Eje principal en X por defecto*/
+    /* flex-direction: row; */
+
+    /* Eje principal en Y */
+    /* flex-direction: column; */
+
+    /* alineacion sobre eje principal dado por flex-align */
+    justify-content: space-between;
+
+    border: 1px solid #333333;
+    padding:15px;
+    height:200px;
+}
+h1{
+    /* transforma al elemento en un contenedor */
+    display: flex;
+
+    /* alineacion sobre eje secundario dado por flex-align */
+    align-items: center;
+
+    border: 1px solid #333333;
+}
+nav{
+    /* transforma al elemento en un contenedor */
+    display: flex;
+
+    /* alineacion sobre eje secundario dado por flex-align */
+    align-items: center;
+    
+    border: 10px solid #333333;
+    gap:20px;
+    
+}

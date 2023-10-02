@@ -1,0 +1,41 @@
+/* modelo de caja alternativo */
+*{
+    box-sizing: border-box;
+}
+
+/* limpiamos */
+html,body,h1{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    /* display: flex;
+    flex-direction: column; */
+}
+
+article{
+    /* transforma al elemento en un contenedor */
+    display: flex;
+
+    /* Eje principal en X por defecto*/
+    /* flex-direction: row; */
+
+    /* Eje principal en Y */
+    /* flex-direction: column; */
+}
+.imagen{
+    width: 50%;
+}
+.imagen > img{
+    /* se expande a lo ancho hasta ocupar su contenedor*/
+    width: 100%;
+
+    /* la imagen debe encajar en su contenedor */
+    object-fit: cover;
+    /* posicion con respecto a su contenedor */
+    object-position: center;
+}
+.texto{
+    width: 50%;
+}
